@@ -1,4 +1,4 @@
-const mongodb = require('../data/contacts');
+const mongodb = require('../data/database');
 
 const ObjectId = require('mongodb').ObjectId;
 
