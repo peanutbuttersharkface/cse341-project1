@@ -1,7 +1,7 @@
 const mongodb = require('../data/database');
-console.log(mongodb);
+
 const ObjectId = require('mongodb').ObjectId;
-console.log(ObjectId);
+
 const getAll = async (req, res) => {
     const result = await mongodb.getDatabase().db().collection('Contacts').find();
     result.toArray().then((Contacts) => {
