@@ -3,32 +3,32 @@ dotenv.config();
 
 const MongoClient = require('mongodb').MongoClient;
 
-let contacts;
+let database;
 
 const initDb = (callback) =>{
-    if(contacts){
+    if(database){
         console.log('Db is already initialized');
-        return callback(null, contacts);
+        return callback(null, database);
     }
     MongoClient.connect(process.env.MONGODB_URL)
     .then((client) =>{
-        contacts = client;
-        callback(null, contacts);
+        database = client;
+        callback(null, database);
     })
     .catch((err) =>{
         callback(err);
     });
 };
 
-const getContacts =() =>{
-    if(!contacts){
-        throw Error('Contacts not initialized')
+const getDatabase =() =>{
+    if(!database){
+        throw Error('Database not initialized')
     } 
-    return contacts;
+    return database;
 };
 
 module.exports = {
     initDb,
-    getContacts
+    getDatabase
 };
 
