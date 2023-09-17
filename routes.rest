@@ -1,0 +1,18 @@
+LOCALHOST
+### Get all contacts
+GET http://localhost:3000/contacts
+
+### Get contact by id
+Get http://localhost:3000/6503718208939f0281daed06
+GET http://localhost:3000/6503723a08939f0281daed07
+GET http://localhost:3000/6503727f08939f0281daed08
+
+PRODUCTION
+### Get all contacts
+GET https://project1-c38m.onrender.com/contacts
+
+### Get contact by id
+Get https://project1-c38m.onrender.com/contacts/6503718208939f0281daed06
+GET https://project1-c38m.onrender.com/contacts/6503723a08939f0281daed07
+GET https://project1-c38m.onrender.com/contacts/6503727f08939f0281daed08
+
