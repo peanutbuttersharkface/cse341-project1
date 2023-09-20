@@ -5,7 +5,7 @@
     "description": "Users Api",
     "version": "1.0.0"
   },
-  "host": "https://project1-c38m.onrender.com",
+  "host": "project1-c38m.onrender.com",
   "basePath": "/",
   "schemes": [
     
