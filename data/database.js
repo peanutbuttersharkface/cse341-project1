@@ -18,12 +18,7 @@ const initDb = (callback) =>{
     .catch((err) =>{
         callback(err);
     });
-    let MONGODB_URL;
-    if(MONGODB_URL === undefined || MONGODB_URL === null){
-        console.log('The variable is not initialized');
-    }else{
-        console.log('The variaable is initialized');
-    }
+    
 };
 
 const getDatabase =() =>{
